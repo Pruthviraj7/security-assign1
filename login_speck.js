@@ -8,7 +8,7 @@ describe("Test the Username and Password", function () {
   
       it("The function should return ‘No password entered.’ if the password is an empty string", function () {
         var result = checkLogin("username", "");
-        expect(result).toEqual("No password entered");
+        expect(result).toEqual("No password entered.");
       });
   
       it("The function should return true for correct username and password", function () {
