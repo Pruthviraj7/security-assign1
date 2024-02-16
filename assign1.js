@@ -44,8 +44,8 @@ window.onload = function () {
         document.querySelector(".output").style.display = "block";
 
         if (message === "Welcome back") {
-            userNameInput.value = ""; // Clear username field on successful login
-            passwordInput.value = ""; // Clear password field on successful login
+            userNameInput.value = ""; 
+            passwordInput.value = ""; 
         }
 
         if (autofocus && message !== "Welcome back") {
