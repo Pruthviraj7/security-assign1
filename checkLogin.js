@@ -7,21 +7,21 @@ function checkLogin(username,password) {
 
     // output
     var returnMsg = "";
-    var invalidCredentials = "Invalid username and password";
+    var invalidCredentials = "Invalid Username or Password.";
     var noUsername = "No username entered.";
-    var noPassword = "No password entered";
-    var correctCredentials = "Welcome back";
+    var noPassword = "No password entered.";
+    var correctCredentials = "Welcome back!";
 
     if (username === "" && password === "") {
-        returnMsg = noUsername; // Display only "No username entered"
+        returnMsg = noUsername; 
     } else if (username === "") {
         returnMsg = noUsername;
     } else if (password === "") {
         returnMsg = noPassword;
     } else if (validUserName !== username || validPassWordHash !== md5Encrypt(password)){
-        returnMsg = invalidCredentials; // Invalid username or password
+        returnMsg = invalidCredentials; 
     } else {
-        returnMsg = correctCredentials; // Valid username and password
+        returnMsg = correctCredentials; 
     }
 
     return returnMsg;
